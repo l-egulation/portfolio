@@ -45,3 +45,8 @@
 .slide .hud-change{font-size:14px;margin-top:14px;margin-bottom:0}@media print{.slide .hud-change{font-size:10pt;margin-top:3mm}}
 
 .runtime-slides{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.runtime-slides figure{margin:0;min-width:0}.runtime-slides .image{height:310px;aspect-ratio:auto;padding:0;background:#fcf6e7}.runtime-slides img{height:100%;max-height:none;object-fit:contain;object-position:top}.runtime-slides figcaption{font-size:14px;margin-top:10px;text-align:center}.slide .runtime-summary{font-size:14px;margin:16px 0 0}.pickle-runtime .footnote{margin-top:14px}@media(max-width:700px){.runtime-slides{grid-template-columns:1fr}.runtime-slides .image{height:auto;max-height:none}.runtime-slides img{height:auto;max-height:580px}}@media print{.runtime-slides{grid-template-columns:repeat(3,minmax(0,1fr));gap:6mm}.runtime-slides .image{height:91mm;max-height:91mm;aspect-ratio:auto}.runtime-slides img{height:100%;max-height:91mm}.runtime-slides figcaption{font-size:10pt;margin-top:2mm}.slide .runtime-summary{font-size:10pt;margin-top:3mm}.pickle-runtime .footnote{margin-top:3mm}}
+
+/* Match the website's selected works introduction. */
+.cover h1{font-size:clamp(36px,4.5vw,60px);letter-spacing:-.055em;line-height:1.2;margin-bottom:20px}.cover .cover-description{font-size:20px;color:#526d81;line-height:1.7;word-break:keep-all;margin:0}.cover .cover-disciplines{font-size:14px;color:#748798;margin:18px 0 0;letter-spacing:.02em}
+@media(max-width:700px){.cover h1{font-size:36px}.cover .cover-description{font-size:16px}.cover .cover-disciplines{font-size:12px}}
+@media print{.cover h1{font-size:34pt;margin-bottom:5mm}.cover .cover-description{font-size:14pt}.cover .cover-disciplines{font-size:10pt;margin-top:4mm}}
