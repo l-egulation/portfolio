@@ -34,3 +34,8 @@
  .rule{margin-top:4mm;padding-top:4mm}.badge{font-size:8pt;margin-bottom:3mm}.callout{padding:4mm 5mm;margin-top:4mm}.callout p{font-size:11pt}.ratio{height:11mm;margin:3mm 0}
  .table{font-size:10pt}.table th{font-size:9pt}.table td,.table th{padding:3mm}
 }
+
+.toolbar-identity{display:flex;align-items:center;gap:18px;min-width:0}.return-link{font-size:12px;white-space:nowrap;text-decoration:none;color:var(--blue);padding:7px 0}.return-link:hover{text-decoration:underline}.slide .award{font-size:14px;font-weight:650;line-height:1.4;color:#855817;margin:0 0 12px}.slide:has(.award) .eyebrow{margin-bottom:8px}@media(max-width:900px){.toolbar-identity{gap:12px}}@media(max-width:420px){.toolbar-identity{gap:8px}.return-link{font-size:11px}.toolbar .title{font-size:12px}.toolbar button{font-size:10px;padding:8px 5px}}@media print{.slide .award{font-size:10pt;line-height:1.2;margin-bottom:3mm}.slide:has(.award) .eyebrow{margin-bottom:2mm}}
+.toolbar>.toolbar-identity{gap:18px}@media(max-width:900px){.toolbar>.toolbar-identity{gap:12px}}@media(max-width:420px){.toolbar>.toolbar-identity{gap:8px}}
+
+.operation-table th:first-child{width:42%}.operation-table td:not(:first-child){font-weight:650}.slide .operation-caption{margin-top:16px;margin-bottom:0}@media print{.operation-table td,.operation-table th{padding:4mm 3mm}.slide .operation-caption{font-size:9pt;margin-top:4mm}}
