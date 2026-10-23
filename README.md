@@ -1,5 +1,7 @@
 # 이규재의 게임 디자인 포트폴리오
 
+**[웹사이트 바로 보기](https://l-egulation.github.io/portfolio/)** · [슬라이드형 보기](https://l-egulation.github.io/portfolio/slide-html/index.html)
+
 맥 스타일 작업실을 모티브로 만든 정적 웹 포트폴리오입니다.
 
 - 메인: `index.html`
