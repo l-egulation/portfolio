@@ -3,3 +3,34 @@
 @media(max-width:420px){.slide{padding:30px 20px 24px}.slide h1{font-size:34px}.slide h2{font-size:28px}.toolbar{padding:0 12px;gap:4px}.title{font-size:14px}.toolbar>div{gap:0}.toolbar button{padding:8px 6px}.table{font-size:12px}.entry-comparison{grid-template-columns:1fr}.slide .fact{font-size:38px}}
 @page{size:320mm 180mm;margin:10mm}@media print{html,body{background:white}.toolbar,.controls,#toc,dialog{display:none!important}#deck{padding:0}.slide,.slide.active,body.all .slide{display:flex;width:100%;height:auto;min-height:158mm;aspect-ratio:auto;padding:10mm 12mm;margin:0;box-shadow:none;break-after:page;break-inside:avoid;overflow:visible}.slide:last-child{break-after:auto}.slide h1{font-size:36pt}.slide h2{font-size:28pt}.slide p{font-size:12pt}.slide .footnote{position:static;font-size:9pt}.slide .eyebrow{font-size:9pt}.slide .caption,.slide .small{font-size:9pt}.cols,.cols.wide-image{grid-template-columns:1fr 1fr}.steps{grid-template-columns:repeat(3,1fr)}.image-pair,.cover-images{grid-template-columns:1fr 1fr}.entry-comparison{grid-template-columns:1fr 1fr}.cover .intro{display:flex}.image img{max-height:75mm}.image{break-inside:avoid}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 @media screen and (min-width:901px) and (min-height:650px){body:not(.all) .slide{width:min(1180px,calc((100svh - 170px)*16/9),100%);padding:36px 44px 28px}}
+/* A slide is one physical sheet, independent of the screen viewport. */
+@page{size:320mm 180mm;margin:0}
+@media print{
+ html,body{margin:0!important;padding:0!important;width:320mm;background:#fff}
+ #deck{margin:0!important;padding:0!important;width:320mm}
+ .slide,.slide.active,body.all .slide{box-sizing:border-box;display:flex!important;flex-direction:column;width:320mm!important;height:180mm!important;min-height:180mm!important;max-height:180mm!important;aspect-ratio:auto!important;padding:12mm 15mm!important;margin:0!important;box-shadow:none;break-before:auto;break-after:page;page-break-after:always;break-inside:avoid;page-break-inside:avoid;overflow:visible;container-type:normal}
+ .slide:last-child{break-after:auto;page-break-after:auto}
+ .slide>*{flex-shrink:0}
+ .slide h1{font-size:34pt;line-height:1.15;margin-bottom:6mm}
+ .slide h2{font-size:27pt;line-height:1.2;margin-bottom:6mm}
+ .slide h3{font-size:15pt;margin-bottom:3mm}
+ .slide p{font-size:11pt;line-height:1.65;margin-bottom:3mm}
+ .slide .eyebrow{font-size:8pt;margin-bottom:4mm}
+ .slide .footnote{position:static;margin-top:5mm;padding-top:3mm;font-size:8pt;line-height:1.5}
+ .slide .small,.slide .caption{font-size:8pt;line-height:1.5}
+ .slide .fact{font-size:32pt}.slide .fact-label{font-size:9pt}
+ .slide-number{top:5mm;right:6mm;font-size:8pt}
+ .cols,.cols.wide-image{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9mm}
+ .visual .image,.portrait .image{height:70mm;max-height:70mm;aspect-ratio:auto}
+ .image img{max-height:66mm}.image{padding:2mm}
+ .image-pair{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+ .image-pair .image{height:75mm;aspect-ratio:auto}
+ .cover .intro{display:flex;margin-bottom:4mm}.cover .signature{font-size:10pt;text-align:right}
+ .cover-images{display:grid;grid-template-columns:1fr 1fr;gap:5mm;margin-top:4mm}.cover-images .image{height:80mm;aspect-ratio:auto}.cover-images img{max-height:80mm}
+ .project-list{grid-template-columns:1fr 1fr;gap:0 9mm}.project-list a{padding:5mm 0}.project-list strong{font-size:19pt}.project-list span{font-size:10pt}
+ .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5mm;margin-top:4mm}.steps .image{height:45mm;max-height:45mm;aspect-ratio:auto;margin-bottom:4mm}.steps .image img{max-height:45mm}.steps strong,.steps:has(.image) strong{font-size:13pt}.steps p{font-size:10pt}.steps b{font-size:9pt;margin-bottom:3mm}
+ .timeline{margin-top:3mm}.timeline li{font-size:11pt;padding:3mm 0}.timeline b{font-size:9pt}
+ .entry-comparison{grid-template-columns:1fr 1fr;gap:3mm;margin-top:4mm}.entry-comparison .image{height:42mm;aspect-ratio:auto}.entry-comparison img{max-height:42mm}
+ .rule{margin-top:4mm;padding-top:4mm}.badge{font-size:8pt;margin-bottom:3mm}.callout{padding:4mm 5mm;margin-top:4mm}.callout p{font-size:11pt}.ratio{height:11mm;margin:3mm 0}
+ .table{font-size:10pt}.table th{font-size:9pt}.table td,.table th{padding:3mm}
+}
