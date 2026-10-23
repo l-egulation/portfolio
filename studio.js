@@ -9,7 +9,7 @@ const catalog=[
 {key:'pickle',name:'Pickle',kind:'패션 모바일 웹',role:'전체 테마 · 스냅 기능과 디자인',desc:'내 옷장과 착장 경험을 연결하는 서비스',image:'pickle-board',detail:'전체 시각 테마와 콘텐츠를 작성·탐색하는 스냅 기능을 소개합니다.'},
 {key:'ai',name:'AI 챌린지',kind:'VQA 비교 실험',role:'모델 학습 · 추론 · 비교 실험',desc:'예측이 달라진 문항을 골라 다시 추론한 실험',detail:'전체 추론의 점수 하락 뒤, 예측이 달라진 문항에 재검토를 집중했습니다.'}
 ];
-const imageDimensions={"han-collapsed.webp":[1800,1013],"cam-main.webp":[1440,1024],"cam-login-proto.webp":[1200,854],"han-main.webp":[1800,1013],"cam-lobby.webp":[1443,1024],"cam-play18.webp":[1200,675],"pickle-board.webp":[1441,1800],"cam-play19.webp":[1200,675],"pickle-lookbook.webp":[199,700],"cam-play20.webp":[1200,675],"cam-guest-proto.webp":[1200,854],"deviant-character.png":[1024,1024],"cam-feedback39.webp":[1200,675],"cam-feedback38.webp":[1200,675]};
+const imageDimensions={"pickle-compose-live.png":[430,932],"pickle-crop-live.png":[430,875],"pickle-tags-live.png":[430,752],"han-collapsed.webp":[1800,1013],"cam-main.webp":[1440,1024],"cam-login-proto.webp":[1200,854],"han-main.webp":[1800,1013],"cam-lobby.webp":[1443,1024],"cam-play18.webp":[1200,675],"pickle-board.webp":[1441,1800],"cam-play19.webp":[1200,675],"pickle-lookbook.webp":[199,700],"cam-play20.webp":[1200,675],"cam-guest-proto.webp":[1200,854],"deviant-character.png":[1024,1024],"cam-feedback39.webp":[1200,675],"cam-feedback38.webp":[1200,675]};
 function reserveImageSpace(){canvas.querySelectorAll('.case-image img[src]').forEach(img=>{const size=imageDimensions[img.getAttribute('src').split('/').pop()];if(size){img.width=size[0];img.height=size[1];}});}
 let current='';let displayMode='gallery';let query='';let previousFocus;
 const search=document.getElementById('search');
